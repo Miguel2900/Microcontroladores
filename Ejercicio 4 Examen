@@ -23,12 +23,12 @@ BCF STATUS, RP0
     inicio: 
     
 	    BSF PORTB, 0   
-	    call tiempo1 ;5 SEGUNDOS
+	    call tiempo2 ;478 ms
+	    nop
 	    nop
 	    nop
 	    BCF PORTB, 0
-	    call tiempo2 ;1 SEGUNDO
-	    nop
+	    call tiempo1 ;522 ms
 	    GOTO inicio
        
     tiempo1:
